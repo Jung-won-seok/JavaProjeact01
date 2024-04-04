@@ -38,9 +38,9 @@ public class CustomerController {
     public boolean isPhoneNumberExist(String phoneNumber) {
         for (Customer customer : customers) {
             if (customer.getPhoneNumber().equals(phoneNumber)) {
-                return true;
+                return true; //중복됐다.
             }
         }
-        return false;
+        return false; //중복되지 않았다.
     }
 }
